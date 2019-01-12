@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Anyconnect简易搭建教程 （CentOS专用）]]></title>
+    <url>%2F2019%2F01%2F12%2FAnyconnect%E7%AE%80%E6%98%93%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B-%EF%BC%88CentOS%E4%B8%93%E7%94%A8%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[‘anyconnect简易搭建教程–centos专用’, 1435564771, 1489065995, ‘\r\n安装anyconnect开始配置anyconnect，首先部署：wget https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7/blob/4093e71b4542cab779116db1fb38ab9d17d1a13e/ocserv-install-script-for-centos7.sh ocserv-install-script-for-centos7.sh然后按照提示即可，很傻瓜。部署完，需要开启防火墙：systemctl start firewalld.service部署完成（感谢https://www.stunnel.info/ocserv-cisco-anyconnect-%E5%85%BC%E5%AE%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC-for-centos-7/ ）.补充说明\r\n搭建完成后，按下面方式启动不过如果你重启了，可以用下面方法快速开启anyconnect：开启anyconnect：systemctl start firewalld.service\r\nfirewall-cmd –permanent –zone=public —add-port=8981/tcp‘]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F01%2F12%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[laravel-admin入坑指南]]></title>
+    <url>%2F2019%2F01%2F12%2Flaravel-admin%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[laravel-admin入坑指南 测试标题 哈哈哈]]></content>
+      <categories>
+        <category>laravel</category>
+      </categories>
+      <tags>
+        <tag>laravel</tag>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test_my_site]]></title>
+    <url>%2F2019%2F01%2F12%2Ftest-my-site%2F</url>
+    <content type="text"></content>
+  </entry>
+</search>
