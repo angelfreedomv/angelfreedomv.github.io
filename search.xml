@@ -16,11 +16,6 @@
     <content type="text"><![CDATA[Anyconnect 安装教程安装anyconnect开始配置anyconnect，首先部署：wget https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7/blob/4093e71b4542cab779116db1fb38ab9d17d1a13e/ocserv-install-script-for-centos7.sh 终端运行 ocserv-install-script-for-centos7.sh然后按照提示即可，很傻瓜。部署完，需要开启防火墙：systemctl start firewalld.service部署完成 感谢 https://www.stunnel.info/ocserv-cisco-anyconnect-%E5%85%BC%E5%AE%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC-for-centos-7/ ）.补充说明搭建完成后，按下面方式启动不过如果你重启了，可以用下面方法快速开启anyconnect：开启anyconnect：systemctl start firewalld.service firewall-cmd –permanent –zone=public —add-port=8981/tcp]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F01%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[laravel-admin入坑指南]]></title>
     <url>%2F2019%2F01%2F12%2Flaravel-admin%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97%2F</url>
     <content type="text"><![CDATA[laravel-admin入坑指南 如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。 终端：$php artisan make:model php artisan admin:make MovieController –model=App\Movie 然后把 生成的Controller加到routes.php 对应的表，先把数据库设计好，数据库名后面加s，对应模型名不带s。]]></content>
