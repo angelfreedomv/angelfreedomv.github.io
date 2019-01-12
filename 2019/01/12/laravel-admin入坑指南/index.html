@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="laravel-admin入坑指南 测试标题 哈哈哈">
+<meta name="description" content="laravel-admin入坑指南 如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。  终端：$php artisan make:model   php artisan admin:make MovieController –model=App\Movie  然后把 生成的Controller加到routes.php  对应的表">
 <meta name="keywords" content="laravel,php">
 <meta property="og:type" content="article">
 <meta property="og:title" content="laravel-admin入坑指南">
 <meta property="og:url" content="http://angelfreedomv.github.io/2019/01/12/laravel-admin入坑指南/index.html">
 <meta property="og:site_name" content="立华⛩️">
-<meta property="og:description" content="laravel-admin入坑指南 测试标题 哈哈哈">
+<meta property="og:description" content="laravel-admin入坑指南 如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。  终端：$php artisan make:model   php artisan admin:make MovieController –model=App\Movie  然后把 生成的Controller加到routes.php  对应的表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-12T10:24:21.650Z">
+<meta property="og:updated_time" content="2019-01-12T11:48:29.786Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="laravel-admin入坑指南">
-<meta name="twitter:description" content="laravel-admin入坑指南 测试标题 哈哈哈">
+<meta name="twitter:description" content="laravel-admin入坑指南 如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。  终端：$php artisan make:model   php artisan admin:make MovieController –model=App\Movie  然后把 生成的Controller加到routes.php  对应的表">
 
 
 
@@ -461,8 +461,21 @@
       
 
       
-        <h1 id="laravel-admin入坑指南"><a href="#laravel-admin入坑指南" class="headerlink" title="laravel-admin入坑指南"></a><strong>laravel-admin入坑指南</strong></h1><p> 测试标题 哈哈哈</p>
- <a id="more"></a>
+        <h1 id="laravel-admin入坑指南"><a href="#laravel-admin入坑指南" class="headerlink" title="laravel-admin入坑指南"></a><strong>laravel-admin入坑指南</strong></h1><ul>
+<li><p>如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。</p>
+</li>
+<li><p>终端：$php artisan make:model </p>
+<ul>
+<li><p>php artisan admin:make MovieController –model=App\Movie</p>
+</li>
+<li><p>然后把 生成的Controller加到routes.php</p>
+</li>
+<li><p>对应的表，先把数据库设计好，数据库名后面加s，对应模型名不带s。</p>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
@@ -593,7 +606,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://angelfreedomv.github.io/"/>
-  <updated>2019-01-12T11:17:03.699Z</updated>
+  <updated>2019-01-12T11:53:56.869Z</updated>
   <id>http://angelfreedomv.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laravel进阶</title>
+    <link href="http://angelfreedomv.github.io/2019/01/12/laravel%E8%BF%9B%E9%98%B6/"/>
+    <id>http://angelfreedomv.github.io/2019/01/12/laravel进阶/</id>
+    <published>2019-01-12T10:53:56.000Z</published>
+    <updated>2019-01-12T11:53:56.869Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo生成博文并且插入图片</title>
+    <link href="http://angelfreedomv.github.io/2019/01/12/hexo%E7%94%9F%E6%88%90%E5%8D%9A%E6%96%87%E5%B9%B6%E4%B8%94%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>http://angelfreedomv.github.io/2019/01/12/hexo生成博文并且插入图片/</id>
+    <published>2019-01-12T10:51:58.000Z</published>
+    <updated>2019-01-12T11:52:40.698Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;十分痛苦，是因为突然发现上传的博客里面的图片居然显示不来，excuse me??? &lt;/p&gt;
+&lt;p&gt;笋干shabi了&lt;br&gt;怎么办，上网google解决之道，然后又试了很多坑…….
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Anyconnect简易搭建教程 （CentOS专用）</title>
@@ -65,11 +102,17 @@
     <link href="http://angelfreedomv.github.io/2019/01/12/laravel-admin%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97/"/>
     <id>http://angelfreedomv.github.io/2019/01/12/laravel-admin入坑指南/</id>
     <published>2019-01-12T02:26:24.000Z</published>
-    <updated>2019-01-12T10:24:21.650Z</updated>
+    <updated>2019-01-12T11:48:29.786Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;laravel-admin入坑指南&quot;&gt;&lt;a href=&quot;#laravel-admin入坑指南&quot; class=&quot;headerlink&quot; title=&quot;laravel-admin入坑指南&quot;&gt;&lt;/a&gt;&lt;strong&gt;laravel-admin入坑指南&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt; 测试标题 哈哈哈&lt;/p&gt;
+      
+      
+        
+        
+          &lt;h1 id=&quot;laravel-admin入坑指南&quot;&gt;&lt;a href=&quot;#laravel-admin入坑指南&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     

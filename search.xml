@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[laravel进阶]]></title>
+    <url>%2F2019%2F01%2F12%2Flaravel%E8%BF%9B%E9%98%B6%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo生成博文并且插入图片]]></title>
+    <url>%2F2019%2F01%2F12%2Fhexo%E7%94%9F%E6%88%90%E5%8D%9A%E6%96%87%E5%B9%B6%E4%B8%94%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%2F</url>
+    <content type="text"><![CDATA[十分痛苦，是因为突然发现上传的博客里面的图片居然显示不来，excuse me??? 笋干shabi了怎么办，上网google解决之道，然后又试了很多坑……. 更加绝望了…..然后，看到了这个：dalao指导hhhh，再试一次….. 然而，居然可以了….excuse me?? 好吧，总结一下这个牛批的解决办法： First1 把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true 2 在你的hexo目录下执行这样一句话npm install hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件，来自dalao：dalao的git 3 等待一小段时间后，再运行hexo n “xxxx”来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹 Second4 最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片： 注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。 5 最后检查一下，hexo g生成页面后，进入public\2017\02\26\index.html文件中查看相关字段，可以发现，html标签内的语句是，而不是&lt;img src=”xxxx/图片名.jpg&gt;。这很重要，关乎你的网页是否可以真正加载你想插入的图片。 总结一下这个跳（试）坑的过程首先是有句mmp想讲，实在是有点坑 但是，似乎又多了一项学（zhuang）习（bi）技巧 hhh，先到这里，后面还有一个坑就是，想引入某些dalao 的链接时，如果链接里包含中文，那么再写入md文件里生成网页后这个链接就打不开了….. 待老夫研究后再填坑，后面如果有时间，就把自己搭建网站的过程码一下。 作者：Nuub来源：CSDN原文：https://blog.csdn.net/sugar_rainbow/article/details/57415705版权声明：本文为博主原创文章，转载请附上博文链接！]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Anyconnect简易搭建教程 （CentOS专用）]]></title>
     <url>%2F2019%2F01%2F12%2FAnyconnect%E7%AE%80%E6%98%93%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B-%EF%BC%88CentOS%E4%B8%93%E7%94%A8%EF%BC%89%2F</url>
     <content type="text"><![CDATA[Anyconnect 安装教程安装anyconnect开始配置anyconnect，首先部署：wget https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7/blob/4093e71b4542cab779116db1fb38ab9d17d1a13e/ocserv-install-script-for-centos7.sh 终端运行 ocserv-install-script-for-centos7.sh然后按照提示即可，很傻瓜。部署完，需要开启防火墙：systemctl start firewalld.service部署完成 感谢 https://www.stunnel.info/ocserv-cisco-anyconnect-%E5%85%BC%E5%AE%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC-for-centos-7/ ）.补充说明搭建完成后，按下面方式启动不过如果你重启了，可以用下面方法快速开启anyconnect：开启anyconnect：systemctl start firewalld.service firewall-cmd –permanent –zone=public —add-port=8981/tcp]]></content>
@@ -13,7 +23,7 @@
   <entry>
     <title><![CDATA[laravel-admin入坑指南]]></title>
     <url>%2F2019%2F01%2F12%2Flaravel-admin%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[laravel-admin入坑指南 测试标题 哈哈哈]]></content>
+    <content type="text"><![CDATA[laravel-admin入坑指南 如出现admin:make controller 提示没有model的时候，请创建模型文件，对应Admin目录下面。 终端：$php artisan make:model php artisan admin:make MovieController –model=App\Movie 然后把 生成的Controller加到routes.php 对应的表，先把数据库设计好，数据库名后面加s，对应模型名不带s。]]></content>
       <categories>
         <category>laravel</category>
       </categories>
