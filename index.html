@@ -327,6 +327,225 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://angelfreedomv.github.io/2019/01/15/nginx读取laravel的二级目录/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Angelfreedom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="立华⛩️">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/15/nginx读取laravel的二级目录/" itemprop="url">nginx读取laravel的二级目录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T11:10:49+09:00">
+                2019-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/15/nginx读取laravel的二级目录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/15/nginx读取laravel的二级目录/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+          
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>nginx规则如下：<br>server {<br>    listen          80;<br>    listen          443 ssl http2;<br>    server_name     new.api.zentrust.cn;<br>    root            /var/www/new.api.zentrust.cn/prod/public;<br>    index           index.php index.html index.htm;<br>    etag on;</p>
+<pre><code>gzip on;
+gzip_vary on;
+gzip_http_version 1.0;
+gzip_min_length 1k;
+gzip_buffers 4 16k;
+gzip_comp_level 2;
+gzip_disable msie6;
+gzip_types text/plain text/css application/json application/javascript application/x-javascript text/javascript text/xml application/xml application/xml+rss;
+
+client_max_body_size 110m;
+client_body_buffer_size 1024k;
+
+keepalive_timeout   60;
+
+sendfile on;
+sendfile_max_chunk 512k;
+tcp_nopush on;
+tcp_nodelay on;
+
+ssl_session_cache   shared:SSL:10m;
+ssl_session_timeout 30m;
+ssl_certificate /etc/nginx/ssl/new.api.zentrust.cn/fullchain.cer;
+ssl_certificate_key /etc/nginx/ssl/new.api.zentrust.cn/privkey.key;
+
+location ^~ /test {
+    alias   /var/www/new.api.zentrust.cn/test/public;
+
+    if (!-e $request_filename) {
+            rewrite ^ /test/index.php last;
+    }
+
+    location ~ \.php$ {
+            if (!-f $request_filename) {
+                    return 404;
+            }
+
+            fastcgi_pass        unix:/tmp/php-fpm-72.sock;
+            fastcgi_index       index.php;
+            fastcgi_param       SCRIPT_FILENAME $request_filename;
+            include             fastcgi_params;
+    }
+}
+
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+
+location ~ \.php$ {
+    fastcgi_pass        unix:/tmp/php-fpm-72.sock;
+    fastcgi_index       index.php;
+    fastcgi_param       SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include             fastcgi_params;
+}
+
+location = /robots.txt  { access_log off; log_not_found off; }
+location = /favicon.ico { access_log off; log_not_found off; }
+</code></pre><p>}</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://angelfreedomv.github.io/2019/01/12/laravel进阶/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1213,7 +1432,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

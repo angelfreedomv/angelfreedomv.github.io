@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://angelfreedomv.github.io/"/>
-  <updated>2019-01-12T11:53:56.869Z</updated>
+  <updated>2019-01-15T03:11:40.707Z</updated>
   <id>http://angelfreedomv.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx读取laravel的二级目录</title>
+    <link href="http://angelfreedomv.github.io/2019/01/15/nginx%E8%AF%BB%E5%8F%96laravel%E7%9A%84%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/"/>
+    <id>http://angelfreedomv.github.io/2019/01/15/nginx读取laravel的二级目录/</id>
+    <published>2019-01-15T02:10:49.000Z</published>
+    <updated>2019-01-15T03:11:40.707Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;nginx规则如下：&lt;br&gt;server {&lt;br&gt;    listen          80;&lt;br&gt;    listen          443 ssl http2;&lt;br&gt;    server_name     new.api.zentrust.cn;&lt;br&gt; 
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>laravel进阶</title>
