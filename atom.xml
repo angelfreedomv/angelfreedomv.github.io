@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://angelfreedomv.github.io/"/>
-  <updated>2019-01-15T03:11:40.707Z</updated>
+  <updated>2019-02-15T03:56:13.864Z</updated>
   <id>http://angelfreedomv.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nextcloud的docker-compose.yml配置文件</title>
+    <link href="http://angelfreedomv.github.io/2019/02/15/nextcloud%E7%9A%84docker-compose-yml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    <id>http://angelfreedomv.github.io/2019/02/15/nextcloud的docker-compose-yml配置文件/</id>
+    <published>2019-02-15T02:50:47.000Z</published>
+    <updated>2019-02-15T03:56:13.864Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;nextcloud 的 docker-compose.yml文件&lt;br&gt;如下：&lt;/p&gt;
+&lt;p&gt;version: ‘2’&lt;/p&gt;
+&lt;p&gt;services:&lt;br&gt;  db:&lt;br&gt;    image: mariadb&lt;br&gt;    restart: always&lt;br&gt;  
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>nginx读取laravel的二级目录</title>
